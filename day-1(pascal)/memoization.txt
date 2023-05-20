@@ -1,0 +1,36 @@
+//memoization method
+import java.util.*;
+public class HelloWorld {
+    private static Map<String, Integer> memo= new HashMap<>();
+    public static int checkpascal(int rows, int cols){
+        String key = rows +"-"+cols;
+        if(memo.containsKey(key)){
+            return memo.get(key);
+        }
+        else if(cols==0||cols==rows){
+            memo.put(key,1);
+            return 1;
+        }
+        else{
+            int value = checkpascal(rows-1,cols-1)+
+            checkpascal(rows-1,cols);
+            memo.put(key,value);
+            return value;
+        }
+    }
+    public static void pascaltriangle(int rows){
+        for(int i = 0;i<rows;i++){
+            for(int j = 0;j<=i;j++){
+                int value = checkpascal(i,j);
+                System.out.print(value+" ");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         System.out.println("enter number of rows : ");
+        int rows = sc.nextInt();
+       pascaltriangle(rows);
+    }
+}
