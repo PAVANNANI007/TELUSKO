@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to quiz</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Telusko Quiz</h1>
+  
+  <!-- Admin Section -->
+  <h2>Admin Panel</h2>
+  <div>
+    <label for="question">Question:</label>
+    <input type="text" id="question" placeholder="Enter question">
+    <br>
+    <label for="option1">Option 1:</label>
+    <input type="text" id="option1" placeholder="Enter option 1">
+    <br>
+    <label for="option2">Option 2:</label>
+    <input type="text" id="option2" placeholder="Enter option 2">
+    <br>
+    <label for="option3">Option 3:</label>
+    <input type="text" id="option3" placeholder="Enter option 3">
+    <br>
+    <label for="option4">Option 4:</label>
+    <input type="text" id="option4" placeholder="Enter option 4">
+    <br>
+    <label for="answer">Answer:</label>
+    <select id="answer">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+    </select>
+    <br>
+    <button onclick="addQuestion()">Add Question</button>
+  </div>
+  
+  <!-- Quiz Section -->
+  <h2>Quiz</h2>
+  <div id="quiz-container"></div>
+  <button onclick="startQuiz()">Start Quiz</button>
+  <script src="script.js"></script>
+</body>
+</html>

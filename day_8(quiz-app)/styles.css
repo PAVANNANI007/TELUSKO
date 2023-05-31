@@ -1,0 +1,48 @@
+body{
+  text-align: center;
+  background-image: url(/assets/back.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+h1{
+  color: rgb(231, 9, 109);
+  font-size: 40px;
+  text-decoration-line: underline;
+}
+h2{
+  color: rgb(232, 244, 5);
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+label{
+  font-size: 20px;
+}
+#question{
+  width: 50%;
+  margin: 0px 20px 20px 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 4px;
+}
+button{
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 4px;
+}
+button:hover{
+  background-color: rgb(91, 240, 242);
+}
+#option1,#option2,#option3,#option4,#answer{
+  width: 25%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 4px;
+}
